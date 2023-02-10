@@ -1,0 +1,196 @@
+:root {
+    --dark900: #111d13;
+    --dark800: #415d43;
+    --light700: #8fb996;
+    --light800: #8fb996;
+    --green: #132a13;
+    --yellow: #ffd60a;
+    --red: #bf0603;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark800);
+    font-family: 'Orbitron', sans-serif;
+    color: var(--light800);
+}
+
+.headcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.toppart {
+    background-color: var(--dark800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.header {
+    width: 70%;
+}
+
+.header>marquee>h2 {
+    margin-top: 1rem;
+}
+
+.vline {
+
+    border: 3px dotted var(--light800);
+    width: 30rem;
+    height: 3px;
+    margin: auto;
+}
+
+.vline1 {
+    border: 3px dotted var(--light800);
+    width: 30rem;
+    height: 3px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.span1 {
+    color: var(--green);
+}
+
+.span2 {
+    color: var(--red);
+}
+
+.span3 {
+    color: var(--yellow);
+}
+
+/* !end of header */
+
+/* .leftSideHuman{
+    border: solid 4px white;
+}
+
+.rightSideComputer{
+    border: solid 4px white;
+} */
+.humanScore {
+    border: solid 4px var(--green);
+    border-radius: 20px;
+    height: 15rem;
+}
+
+.result {
+    border: solid 4px var(--yellow);
+    border-radius: 20px;
+    height: 15rem;
+}
+
+.coputerScore {
+    border: solid 4px var(--red);
+    border-radius: 20px;
+    height: 15rem;
+}
+
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handtype {
+    display: flex;
+    gap: 1rem;
+}
+
+.handtype>li {
+    list-style: none;
+}
+
+.left {
+    position: relative;
+    height: 8rem;
+    margin-bottom: 3rem;
+
+}
+
+.resetBTN {
+    background-color: var(--dark900);
+    color: var(--light800);
+}
+
+.resetBTN:hover {
+    background-color: var(--light700);
+    color: var(--dark900);
+}
+
+/* .inBetween{
+    border: solid 3px red;
+} */
+
+.right {
+    position: relative;
+    height: 8rem;
+    margin-bottom: 3rem;
+}
+
+.rock {
+    height: 5rem;
+    border-radius: 50px;
+    border: 4px solid var(--green);
+
+
+}
+
+.paper {
+    height: 5rem;
+    border-radius: 50px;
+    border: 4px solid var(--red);
+
+}
+
+.scissors {
+    height: 5rem;
+    border-radius: 50px;
+    border: 4px solid var(--yellow);
+
+}
+
+.btnDesign {
+    border-radius: 30px;
+    width: 7rem;
+    height: 7rem;
+}
+
+.btnDesigncomp {
+    border-radius: 30px;
+    width: 7rem;
+    height: 7rem;
+}
+
+.theSelection {
+    height: 20rem;
+}
+
+.selectedbyHuman {
+    height: 15rem;
+    border: 4px solid var(--green);
+    border-radius: 120px;
+}
+
+.selectedbyComputer {
+    height: 15rem;
+    border: 4px solid var(--red);
+    border-radius: 120px;
+}
+
+/* @media(max-width: 1000px)
+{
+
+} */
