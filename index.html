@@ -47,7 +47,7 @@
     </div>
 
     <div class="col-3 d-flex flex-column justify-content-center align-items-center result">
-      <h4 class="mb-4" id="gameResult"></h4>
+      <h4 class="mb-4" id="gameResult">RESULT</h4>
       <span>
         <h5>1/5</h5>
       </span>
@@ -67,21 +67,23 @@
   <div class="container-fluid d-flex p-5">
     <div class="col-5 leftSideHuman">
       <div class="col-12 d-flex justify-content-center">
-        <img src="./img/lizard.png" alt="selectedbyHuman" class="selectedbyHuman" />
+        <img src="./img/rock.png" alt="selectedbyHuman" class="selectedbyHuman" id="selectedbyHuman"/>
       </div>
       <h3 class="text-center m-5" id="humanPlayer">YOU</h3>
 
       <div class="col-12 left d-flex justify-content-center flex-row align-items-end pb-3">
-        <ul class="handtype">
+        <ul id="handtype">
           <li>
-            <button class="btnDesign"><img src="./img/rock.png" alt="rock" class="rock" id="rock" />Rock</button>
+            <button class="btnDesign" onclick="changeImge('./img/rock.png')"><img src="./img/rock.png" alt="rock"
+                class="rock" id="rock" />Rock</button>
           </li>
           <li>
-            <button class="btnDesign"><img src="./img/paper.png" alt="paper" class="paper" id="paper" />Paper</button>
+            <button class="btnDesign" onclick="changeImge('./img/paper.png')"><img src="./img/paper.png" alt="paper"
+                class="paper" id="paper" />Paper</button>
           </li>
           <li>
-            <button class="btnDesign"><img src="./img/scissors.png" alt="scissors" class="scissors"
-                id="scissors" />Scissors</button>
+            <button class="btnDesign" onclick="changeImge('./img/scissors.png')"><img src="./img/scissors.png"
+                alt="scissors" class="scissors" id="scissors" />Scissors</button>
           </li>
         </ul>
       </div>
@@ -92,12 +94,12 @@
 
     <div class="col-5 rightSideComputer">
       <div class="col-12 d-flex justify-content-center">
-        <img src="./img/lizard.png" alt="selectedbyComputer" class="selectedbyComputer" />
+        <img src="./img/rock.png" alt="selectedbyComputer" class="selectedbyComputer" />
       </div>
       <h3 class="text-center m-5" id="computerPlayer">COMPUTER</h3>
 
       <div class="col-12 right d-flex justify-content-center flex-row align-items-end pb-3">
-        <ul class="handtype">
+        <ul id="handtype">
           <li>
             <button class="btnDesigncomp"><img src="./img/rock.png" alt="rock" class="rock" />Rock</button>
           </li>
@@ -105,7 +107,8 @@
             <button class="btnDesigncomp"><img src="./img/paper.png" alt="paper" class="paper" />Paper</button>
           </li>
           <li>
-            <button class="btnDesigncomp"><img src="./img/scissors.png" alt="scissor" class="scissors" />Scissors</button>
+            <button class="btnDesigncomp"><img src="./img/scissors.png" alt="scissor"
+                class="scissors" />Scissors</button>
           </li>
         </ul>
       </div>

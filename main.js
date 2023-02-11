@@ -2,8 +2,10 @@ const HumanPlayer = document.querySelector("#humanPlayer");
 const ComputerPlayer = document.querySelector("#computerPlayer");
 const gameResult = document.querySelector("#gameResult");
 const choiceBtns = document.querySelectorAll(".btnDesign");
-const playerScore = document.querySelector("#yourScore");
-const computerScore = document.querySelector("#compScore");
+
+let playerScore = document.querySelector("#yourScore");
+let computerScore = document.querySelector("#compScore");
+
 const resetGame = document.querySelector("#resetBTN");
 
 let player;
@@ -47,3 +49,14 @@ function checkWinner() {
   }
 }
 
+resetGame.addEventListener("click", function () {
+  console.log("You have clicked Reset Game! You want to continue?");
+  document.querySelector("#yourScore").innerHTML = 0;
+  document.querySelector("#compScore").innerHTML = 0;
+});
+
+function changeImge(fileName) {
+  let img = document.querySelector("#selectedbyHuman");
+  img.setAttribute("src", fileName);
+  console.log(img);
+}

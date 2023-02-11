@@ -104,12 +104,12 @@
     align-items: center;
 }
 
-.handtype {
+#handtype {
     display: flex;
     gap: 1rem;
 }
 
-.handtype>li {
+#handtype>li {
     list-style: none;
 }
 
@@ -144,34 +144,45 @@
     height: 5rem;
     border-radius: 50px;
     border: 4px solid var(--green);
+    transition: 100ms;
+}
 
-
+.rock:hover {
+    transform: scale(1.2);
 }
 
 .paper {
     height: 5rem;
     border-radius: 50px;
     border: 4px solid var(--red);
+    transition: 100ms;
+}
 
+.paper:hover {
+    transform: scale(1.2);
 }
 
 .scissors {
     height: 5rem;
     border-radius: 50px;
     border: 4px solid var(--yellow);
+    transition: 100ms;
+}
 
+.scissors:hover {
+    transform: scale(1.2);
 }
 
 .btnDesign {
     border-radius: 30px;
     width: 7rem;
-    height: 7rem;
+    height: 8rem;
 }
 
 .btnDesigncomp {
     border-radius: 30px;
     width: 7rem;
-    height: 7rem;
+    height: 8rem;
 }
 
 .theSelection {
